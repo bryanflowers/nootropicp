@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Card, CardBody } from "@/components/ui/Card";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -13,6 +14,7 @@ export const metadata = buildMetadata({
 export default function DisclaimerPage() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Legal", href: "/legal/disclaimer" }, { label: "Disclaimer" }]} />
       <Section eyebrow="Legal" title="Disclaimer">
         <Card className="border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/30">
           <CardBody className="text-sm leading-relaxed text-amber-900 dark:text-amber-200">

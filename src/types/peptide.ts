@@ -26,6 +26,21 @@ export interface FAQ {
   a: string;
 }
 
+export type PeptideTag =
+  | "bdnf-inducer"
+  | "ngf-inducer"
+  | "enkephalinase-inhibitor"
+  | "synaptogenic"
+  | "neuroprotective"
+  | "sleep-architecture"
+  | "russian-origin"
+  | "oral-active"
+  | "intranasal"
+  | "parenteral"
+  | "khavinson-bioregulator"
+  | "fgfr-agonist"
+  | "c-met-agonist";
+
 export interface Peptide {
   slug: string;
   name: string;
@@ -51,4 +66,6 @@ export interface Peptide {
   faqs: FAQ[];
   related: string[]; // slugs
   keywords: string[];
+  tags?: PeptideTag[];
+  lastReviewed?: string; // ISO date e.g. "2026-05-16"
 }

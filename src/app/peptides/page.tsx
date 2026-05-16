@@ -5,6 +5,7 @@ import { Card, CardBody } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ArrowRight } from "lucide-react";
 import { peptides } from "@/data/peptides";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 import type { PeptideCategory } from "@/types/peptide";
 
@@ -27,6 +28,7 @@ const CATEGORIES: PeptideCategory[] = [
 export default function PeptidesIndexPage() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Peptides" }]} />
       <Section
         eyebrow="Peptide library"
         title="All research peptides"

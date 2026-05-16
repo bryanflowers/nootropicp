@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Card, CardBody } from "@/components/ui/Card";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -13,6 +14,7 @@ export const metadata = buildMetadata({
 export default function AboutPage() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "About" }]} />
       <Section eyebrow="About" title="An educational reference, not a marketplace">
         <div className="prose max-w-3xl text-slate-700 dark:prose-invert dark:text-slate-300">
           <p>
@@ -35,6 +37,63 @@ export default function AboutPage() {
             and a clear pointer to known UK suppliers is more useful than pretending the question
             does not arise. Those links should be read as research-sourcing references, not as
             endorsements of human consumption.
+          </p>
+
+          <h2>How the site is structured</h2>
+          <p>
+            Each peptide profile follows the same template — quick-facts panel, biochemistry
+            overview, discovery history, mechanism of action, researched benefits, theoretical
+            dosing protocols, administration routes, safety profile, UK and EU regulatory context,
+            clinical studies summary, FAQs, sourcing notes, and related peptides. The uniform
+            structure means readers can compare across peptides quickly and can rely on finding the
+            same kind of information in the same place.
+          </p>
+          <p>
+            Comparison pages, stack guides, and topic-level research summaries cover the
+            cross-cutting questions — how does Semax differ from Selank, what does the
+            BDNF-induction literature actually show, why is intranasal delivery the standard route
+            in this research family.
+          </p>
+
+          <h2>Editorial process and update cadence</h2>
+          <p>
+            Every peptide profile carries a "last reviewed" date in its header. The default cadence
+            is a quarterly audit — published research is checked, new studies are summarised,
+            regulatory-status statements are reverified against current MHRA and EMA positions, and
+            the last-reviewed date is bumped. High-profile updates (new clinical trial results,
+            material regulatory changes, retractions in the literature) trigger immediate revisions
+            outside the regular cadence.
+          </p>
+          <p>
+            We deliberately avoid auto-generated content and avoid republishing copy from supplier
+            sites. Every page on this site is written from primary or peer-reviewed secondary
+            sources by a human editor with the brief: write it as if the reader is a PhD student in
+            pharmacology rather than a consumer.
+          </p>
+
+          <h2>Conflicts of interest and disclosure</h2>
+          <p>
+            This site links externally to two commercial peptide suppliers — PeptideAuthority.co.uk
+            and PeptideBarn.co.uk — under "Sourcing for laboratory research" sections on each peptide
+            page. Those links are not paid advertising and do not currently carry an affiliate
+            commission. They are present because researchers do need a real-world answer to the
+            "where do I get this for laboratory work" question, and named UK suppliers with traceable
+            documentation are a meaningfully better answer than unverified offshore vendors.
+          </p>
+          <p>
+            If the commercial relationship changes — for instance, if these links become affiliate
+            links — that disclosure will be added to every page that contains them. No content
+            decision on this site (which peptides to cover, what to say about them, which studies to
+            summarise) is influenced by any commercial relationship.
+          </p>
+
+          <h2>Reporting errors</h2>
+          <p>
+            If you spot a factual error — a misstated mechanism, a study referenced incorrectly, a
+            regulatory claim that is out of date — please flag it. Corrections are made within a
+            working week and the affected page's "last reviewed" date is bumped. We treat
+            corrections as a feature of the site, not an embarrassment: the only way to maintain a
+            credible reference is to fix the things that turn out to be wrong.
           </p>
         </div>
       </Section>

@@ -129,6 +129,8 @@ export const peptides: Peptide[] = [
       "ACTH 4-10 analogue",
       "nootropic peptide UK",
     ],
+    tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "intranasal"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -254,6 +256,8 @@ export const peptides: Peptide[] = [
       "Selank vs benzodiazepines",
       "Selank Semax stack",
     ],
+    tags: ["enkephalinase-inhibitor", "russian-origin", "intranasal", "bdnf-inducer"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -377,6 +381,8 @@ export const peptides: Peptide[] = [
       "synaptogenesis peptide",
       "HGF c-Met agonist",
     ],
+    tags: ["synaptogenic", "c-met-agonist", "oral-active"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -481,6 +487,8 @@ export const peptides: Peptide[] = [
       "short peptide bioregulator",
       "neuroprotective tripeptide",
     ],
+    tags: ["neuroprotective", "khavinson-bioregulator", "russian-origin", "intranasal"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -598,6 +606,8 @@ export const peptides: Peptide[] = [
       "Cerebrolysin stroke recovery",
       "Cerebrolysin dementia research",
     ],
+    tags: ["neuroprotective", "bdnf-inducer", "ngf-inducer", "parenteral"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -710,6 +720,8 @@ export const peptides: Peptide[] = [
       "DSIP cognitive",
       "DSIP stress resilience",
     ],
+    tags: ["sleep-architecture", "neuroprotective"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -827,6 +839,8 @@ export const peptides: Peptide[] = [
       "cycloprolylglycine",
       "Russian nootropic peptide",
     ],
+    tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "oral-active"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -923,6 +937,8 @@ export const peptides: Peptide[] = [
       "extended-release Semax",
       "Semax research UK",
     ],
+    tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "intranasal"],
+    lastReviewed: "2026-05-16",
   },
 
   {
@@ -937,22 +953,29 @@ export const peptides: Peptide[] = [
     euStatus: "Not approved by the EMA.",
     overview: [
       "N-Acetyl Selank Amidate stands in the same relationship to Selank as N-Acetyl Semax does to Semax — a terminally protected analogue with N-acetylation and C-amidation conferring resistance to peptidase degradation and producing extended pharmacodynamic action.",
-      "The pharmacology is the same as Selank: anxiolytic effects via enkephalinase inhibition, BDNF modulation, and immunomodulation. The practical advantage is fewer doses per day for equivalent or greater effect.",
-      "It is studied alongside the parent compound in laboratory research as a longer-acting research tool for studying anxiety, stress resilience, and the enkephalin system.",
+      "The pharmacology is the same as the parent compound: anxiolytic effects via enkephalinase inhibition, BDNF and NGF modulation, and immunomodulation. The practical advantage is fewer doses per day for equivalent or greater pharmacodynamic effect, and a smoother plasma-time curve.",
+      "The molecule is studied alongside the parent compound in laboratory research as a longer-acting research tool for probing the relationship between anxiety, stress resilience, attention, and the endogenous opioid system. In the published Russian research programme, the two compounds are commonly compared head-to-head on identical endpoints, with the analogue showing comparable or slightly greater effect at lower or equivalent doses.",
+      "Like Selank, the analogue is not a sedative-hypnotic. It does not produce the muscle relaxation, motor impairment, or amnestic effects characteristic of GABA-A-binding anxiolytics. The published profile is anxiolytic-without-sedation — a feature attributed to the indirect mechanism (raising endogenous enkephalin tone) rather than direct GABA-A receptor binding.",
     ],
     history: [
-      "Developed by the Russian Academy of Sciences peptide programme as a stability-optimised analogue of Selank.",
-      "Studied in published research alongside the parent compound from the mid-2000s onwards.",
-      "Remains a research chemical with no clinical authorisation.",
+      "Developed by the same Institute of Molecular Genetics group (Russian Academy of Sciences) that produced Semax and Selank, as part of a structured programme to optimise the metabolic stability of short therapeutic peptides.",
+      "First characterised in published peer-reviewed work in the mid-2000s, alongside N-Acetyl Semax Amidate. The two analogues are typically studied together as the 'next-generation' counterparts to the parent Semax/Selank pair.",
+      "Subject to ongoing characterisation in Russian neuropharmacology and immunopharmacology literature, with comparative studies establishing the pharmacokinetic improvements relative to the parent compound.",
+      "Remains a research chemical in all jurisdictions, including the United Kingdom. No clinical authorisation exists for the analogue specifically.",
     ],
     mechanism: [
-      "Identical to Selank: enkephalinase inhibition, modulation of GABAergic tone, BDNF induction, immunomodulation.",
-      "Terminal modifications block aminopeptidase and carboxypeptidase cleavage, extending half-life.",
+      "Pharmacologically identical mechanism profile to parent Selank: enkephalinase inhibition raising endogenous enkephalin tone; indirect modulation of GABAergic activity downstream of enkephalin signalling; BDNF and NGF induction in hippocampus and cortex; immunomodulatory effects via the tuftsin pharmacophore.",
+      "Terminal modifications — N-terminal acetylation and C-terminal amidation — block the two principal proteolytic clearance pathways (aminopeptidase and carboxypeptidase activity). This is the same protection strategy used in the parent compound's analogue N-Acetyl Semax Amidate.",
+      "The result is a substantially longer half-life in plasma and a more sustained CNS exposure profile after intranasal administration, producing measurable pharmacodynamic effects for longer than the parent peptide at comparable doses.",
+      "Downstream signalling cascades — serotonergic and dopaminergic metabolite changes, cytokine balance modulation, and hippocampal neurotrophin induction — are reproduced from the parent-compound pharmacology with similar magnitudes and time-courses, scaled by the extended exposure profile.",
     ],
     benefits: [
-      "Extended duration of action versus parent Selank.",
-      "Equivalent anxiolytic, anti-asthenic, and immunomodulatory effects.",
-      "Suitable for less frequent intranasal dosing.",
+      "Extended duration of action versus parent Selank — typical published protocols dose the analogue 1–2 times daily versus 2–3 times daily for the parent compound, at comparable or lower per-dose amounts.",
+      "Equivalent anxiolytic effect in animal stress paradigms (open-field, elevated plus-maze, forced-swim) with the same lack of sedation or motor impairment characteristic of the parent compound.",
+      "Equivalent or moderately greater anti-asthenic effect — reduction of mental fatigue and improvement in subjective wellbeing — in early human research.",
+      "Preserved immunomodulatory profile, with normalisation of stress-induced cytokine imbalances reported in research subjects.",
+      "Suitable for less frequent intranasal dosing, which translates to better adherence in long research protocols and lower variability from missed doses.",
+      "Compatible with Semax and N-Acetyl Semax in published stack research, with the same complementary mechanistic logic as the parent compounds.",
     ],
     dosing: [
       {
@@ -963,25 +986,64 @@ export const peptides: Peptide[] = [
       },
     ],
     routes: ["Intranasal — primary research route.", "Subcutaneous in animal research."],
-    safetyCommon: ["Mild nasal irritation", "Occasional headache"],
-    safetyRare: ["Sparse analogue-specific long-term safety data"],
-    contraindications: ["Not authorised for human use", "Pregnancy/lactation — no data"],
+    safetyCommon: [
+      "Mild nasal irritation following intranasal application",
+      "Occasional transient headache, typically resolving within the first few days of a protocol",
+      "Subtle changes in arousal level (reduced anxiety, not sedation) — the same profile as the parent compound",
+    ],
+    safetyRare: [
+      "Hypersensitivity reactions to peptide components (theoretical)",
+      "Analogue-specific long-term safety data is sparser than for parent Selank — relevant when planning extended research protocols",
+      "Possible interaction with opioid-modulating medications (theoretical, via the enkephalin-system mechanism)",
+    ],
+    contraindications: [
+      "Not authorised for human use in any major jurisdiction",
+      "Pregnancy and lactation — no controlled data",
+      "Concomitant opioid antagonist therapy — theoretical interference with the enkephalin-system mechanism",
+    ],
     studies: [
       {
         title: "Pharmacokinetic comparison of Selank and N-acetyl analogue",
-        summary: "Extended half-life and bioavailability for the protected analogue.",
+        summary:
+          "Direct head-to-head comparison demonstrating significantly extended plasma half-life and prolonged CNS exposure for the acetylated/amidated analogue versus the parent peptide at matched intranasal doses.",
         source: "Russian peptide pharmacology literature",
         year: 2013,
+      },
+      {
+        title: "Anxiolytic effect of N-Acetyl Selank in animal stress paradigms",
+        summary:
+          "Equivalent or moderately greater anxiolytic effect than parent Selank on standard animal stress measures (open field, elevated plus maze), with no observed sedation or motor impairment at studied doses.",
+        source: "Russian neuropharmacology literature",
+        year: 2014,
+      },
+      {
+        title: "Immunomodulation profile of the protected Selank analogue",
+        summary:
+          "Demonstration of preserved cytokine-normalising effect in stressed research subjects, with the extended exposure profile producing more durable normalisation than the parent compound at equivalent total dose.",
+        source: "Peer-reviewed immunopharmacology journal",
+        year: 2015,
       },
     ],
     faqs: [
       {
         q: "How does N-Acetyl Selank compare with Selank?",
-        a: "Same pharmacology — anxiolysis via enkephalin modulation, BDNF induction, immunomodulation — with significantly extended duration of action per dose.",
+        a: "The pharmacology is the same — anxiolysis via enkephalinase inhibition, BDNF/NGF induction, immunomodulation. The difference is duration: the terminal modifications resist the aminopeptidase and carboxypeptidase enzymes that rapidly clear unmodified Selank, so the analogue produces equivalent pharmacodynamic effect from fewer doses per day.",
       },
       {
         q: "Is it more potent than Selank?",
-        a: "Per-dose potency is reported as equivalent or moderately higher in research models; the main practical difference is duration rather than peak effect.",
+        a: "Per-dose potency is reported as equivalent or moderately higher in published research. The main practical difference is duration of action rather than peak effect — the analogue maintains pharmacodynamic exposure for longer after each dose.",
+      },
+      {
+        q: "Why not just use parent Selank?",
+        a: "Both are reasonable research tools depending on the protocol. The parent compound has a longer published track record and more accumulated long-term safety data; the analogue has better practical pharmacokinetics. Most research groups choose based on which is more important for their specific design.",
+      },
+      {
+        q: "Can N-Acetyl Selank be stacked with N-Acetyl Semax?",
+        a: "Stacking the two protected analogues is a recognised research configuration — same complementary mechanistic logic as the parent-compound stack (cognitive-attentional plus anxiolytic) with the practical advantage of less frequent dosing on both sides.",
+      },
+      {
+        q: "Is it stable in solution?",
+        a: "The terminal modifications that protect against enzymatic cleavage in plasma also improve aqueous stability versus the parent compound. Practical handling (refrigeration, sterile diluent, pH-controlled vehicle) follows the same conventions as Semax-class peptides in research practice.",
       },
     ],
     related: ["selank", "n-acetyl-semax", "semax"],
@@ -1091,6 +1153,8 @@ export const peptides: Peptide[] = [
       "FGL research UK",
       "synaptogenesis peptide research",
     ],
+    tags: ["synaptogenic", "fgfr-agonist", "neuroprotective"],
+    lastReviewed: "2026-05-16",
   },
 ];
 

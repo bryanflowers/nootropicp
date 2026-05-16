@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -11,6 +12,7 @@ export const metadata = buildMetadata({
 export default function TermsPage() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Legal", href: "/legal/disclaimer" }, { label: "Terms" }]} />
       <Section eyebrow="Legal" title="Terms of use">
         <div className="prose max-w-3xl text-slate-700 dark:prose-invert dark:text-slate-300">
           <h2>Use of this site</h2>

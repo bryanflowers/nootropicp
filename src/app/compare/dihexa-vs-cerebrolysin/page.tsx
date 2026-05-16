@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ButtonLink } from "@/components/ui/Button";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -26,6 +27,13 @@ const ROWS: [string, string, string][] = [
 export default function DihexaVsCerebrolysin() {
   return (
     <Container className="py-10 lg:py-14">
+      <Breadcrumbs
+        trail={[
+          { label: "Home", href: "/" },
+          { label: "Compare", href: "/compare" },
+          { label: "Dihexa vs Cerebrolysin" },
+        ]}
+      />
       <header className="mb-10 max-w-3xl">
         <Badge variant="brand" className="mb-3">Comparison</Badge>
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-50 lg:text-5xl">

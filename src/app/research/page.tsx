@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Card, CardBody } from "@/components/ui/Card";
 import { ArrowRight } from "lucide-react";
 import { researchSummaries } from "@/data/research";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -17,6 +18,7 @@ export const metadata = buildMetadata({
 export default function ResearchIndex() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Research" }]} />
       <Section
         eyebrow="Research"
         title="Research summaries"

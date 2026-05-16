@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Card, CardBody } from "@/components/ui/Card";
 import { ArrowRight } from "lucide-react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -22,6 +23,7 @@ const COMPARISONS = [
 export default function ComparePage() {
   return (
     <Container>
+      <Breadcrumbs trail={[{ label: "Home", href: "/" }, { label: "Compare" }]} />
       <Section
         eyebrow="Compare"
         title="Peptide comparison guides"

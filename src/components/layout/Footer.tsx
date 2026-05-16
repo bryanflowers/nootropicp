@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { NewsletterSignup } from "./NewsletterSignup";
 import { SITE, DISCLAIMER } from "@/lib/site";
 
 const COLS = [
@@ -39,6 +40,9 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950">
       <Container className="py-12">
+        <div className="mb-10">
+          <NewsletterSignup />
+        </div>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2">
             <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">{SITE.name}</h3>
