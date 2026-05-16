@@ -1,5 +1,6 @@
 import { peptides } from "@/data/peptides";
 import { researchSummaries } from "@/data/research";
+import { studies } from "@/data/studies";
 import { SITE } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -54,6 +55,11 @@ export function GET() {
   lines.push("## Research summaries");
   for (const r of researchSummaries) {
     lines.push(`- [${r.title}](${SITE.url}/research/${r.slug}): ${r.excerpt}`);
+  }
+  lines.push("");
+  lines.push("## Study deep dives");
+  for (const s of studies) {
+    lines.push(`- [${s.shortTitle}](${SITE.url}/research/studies/${s.slug}): ${s.excerpt}`);
   }
   lines.push("");
   lines.push("## Reference");

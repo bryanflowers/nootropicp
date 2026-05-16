@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { peptides } from "@/data/peptides";
 import { researchSummaries } from "@/data/research";
+import { studies } from "@/data/studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -39,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/alternatives/selank",
     "/alternatives/dihexa",
     "/alternatives/cerebrolysin",
+    "/research/studies",
     "/legal/disclaimer",
     "/legal/privacy",
     "/legal/terms",
@@ -63,5 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...peptideRoutes, ...researchRoutes];
+  const studyRoutes = studies.map((s) => ({
+    url: `${base}/research/studies/${s.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...peptideRoutes, ...researchRoutes, ...studyRoutes];
 }

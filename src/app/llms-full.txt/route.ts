@@ -1,6 +1,7 @@
 import { peptides } from "@/data/peptides";
 import { researchSummaries } from "@/data/research";
 import { glossary } from "@/data/glossary";
+import { studies } from "@/data/studies";
 import { SITE, DISCLAIMER } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -74,6 +75,27 @@ export function GET() {
       out.push(p);
       out.push("");
     });
+    out.push("---");
+    out.push("");
+  }
+
+  out.push("## Study deep dives");
+  out.push("");
+  for (const s of studies) {
+    out.push(`### ${s.title}`);
+    out.push(`URL: ${SITE.url}/research/studies/${s.slug}`);
+    out.push(`Design: ${s.designType} (${s.yearRange}, ${s.jurisdiction})`);
+    out.push("");
+    out.push(`Summary: ${s.excerpt}`);
+    out.push("");
+    for (const sec of s.sections) {
+      out.push(`**${sec.heading}**`);
+      out.push("");
+      for (const p of sec.body) {
+        out.push(p);
+        out.push("");
+      }
+    }
     out.push("---");
     out.push("");
   }

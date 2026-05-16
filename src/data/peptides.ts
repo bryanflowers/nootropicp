@@ -1156,6 +1156,617 @@ export const peptides: Peptide[] = [
     tags: ["synaptogenic", "fgfr-agonist", "neuroprotective"],
     lastReviewed: "2026-05-16",
   },
+
+  {
+    slug: "epitalon",
+    name: "Epitalon",
+    aliases: ["Ala-Glu-Asp-Gly", "Epithalon", "Epitalone"],
+    category: "Neuroprotection",
+    tagline:
+      "A short synthetic tetrapeptide developed in the Khavinson bioregulator programme, studied for telomere maintenance, pineal regulation, and indirect cognitive effects via circadian and stress-resilience pathways.",
+    molecularFormula: "C₁₄H₂₂N₄O₉",
+    molecularWeight: "390.35 g/mol",
+    halfLife: "Short plasma half-life; gene-expression effects persist beyond clearance",
+    sequence: "Ala-Glu-Asp-Gly",
+    ukStatus:
+      "Not licensed as a medicine in the United Kingdom. Research chemical only.",
+    euStatus:
+      "Not approved by the EMA. Used in research and traditional clinical practice in the Russian Federation as part of the bioregulator family.",
+    overview: [
+      "Epitalon is a synthetic four-amino-acid peptide developed in the same St. Petersburg Institute of Bioregulation and Gerontology programme that produced Pinealon, Cerluten, and Thymalin. The conceptual heritage is Vladimir Khavinson's hypothesis that very short peptides can pass through the cell and nuclear membranes and act as direct gene-expression regulators by binding specific DNA motifs.",
+      "The molecule is positioned in the Khavinson framework as a pineal-targeted bioregulator. Its most-cited research findings concern modulation of melatonin rhythms, induction of telomerase activity in cultured cells, and extension of average and maximum lifespan in rodent studies. The cognitive relevance — the reason it appears on a nootropic-peptide reference — is indirect: circadian regulation and stress-resilience modulation feed back into next-day cognitive performance, and ageing-related cognitive decline is one of the endpoints the broader programme targets.",
+      "Outside the Khavinson group and collaborators, independent replication of the most distinctive claims — particularly the direct DNA-binding mechanism — has been limited. The phenotypic effects on telomerase activity in cell culture are well-documented; the molecular details of how a tetrapeptide reaches and binds chromatin are more contested.",
+    ],
+    history: [
+      "Synthesised in the 1990s at the St. Petersburg Institute of Bioregulation and Gerontology under the direction of Vladimir Khavinson, as the synthetic equivalent of pineal-gland peptide extracts that the institute had been studying since the 1980s.",
+      "Subject to a substantial body of Russian peer-reviewed work covering telomerase induction, melatonin-rhythm restoration, retinal-protection effects, and gerontoprotective outcomes in rodent models.",
+      "Studied in human research primarily in Russia in elderly populations, with reports of improved sleep architecture, immune-function markers, and subjective wellbeing on cyclical administration protocols.",
+      "Remains a research chemical in all Western jurisdictions, including the United Kingdom.",
+    ],
+    mechanism: [
+      "Proposed direct binding to specific DNA promoter sequences in pineal-relevant genes, modulating transcription of melatonin-synthesis enzymes and other circadian effectors — the central Khavinson-school mechanism.",
+      "Induction of telomerase activity in cultured human somatic cells, extending replicative lifespan and producing the cellular signature most associated with Epitalon in Western secondary literature.",
+      "Restoration of melatonin-rhythm amplitude in aged animal models with otherwise blunted circadian melatonin production.",
+      "Antioxidant effects in retinal and CNS tissue, particularly under age-related oxidative stress.",
+      "Indirect downstream cognitive effects through circadian regulation and stress-axis attenuation — the route by which a pineal-acting peptide reaches cognitive endpoints.",
+    ],
+    benefits: [
+      "Reported telomerase induction and extension of replicative lifespan in cultured cells.",
+      "Restoration of melatonin-rhythm amplitude in aged animal models.",
+      "Improvements in subjective sleep quality and wellbeing in Russian elderly-population research.",
+      "Antioxidant and retinal-protective effects in oxidative-stress models.",
+      "Used as a research tool for studying pineal-gland regulation and circadian-cognition relationships.",
+      "Part of the broader gerontoprotective programme alongside Pinealon and other Khavinson bioregulators.",
+    ],
+    dosing: [
+      {
+        route: "Subcutaneous / intranasal (research)",
+        dosage: "Microgram-range doses in animal and clinical-research protocols",
+        frequency: "Typically once daily during a course",
+        duration: "Cyclical protocols of 10–20 days, repeated periodically rather than continuous",
+        notes:
+          "No standardised Western clinical protocol exists. Russian research practice uses cycles rather than continuous administration.",
+      },
+    ],
+    routes: [
+      "Subcutaneous injection — the primary route in animal research and Russian clinical practice.",
+      "Intranasal administration is documented in some protocols.",
+      "Oral administration is not viable; the peptide is degraded by gastrointestinal proteases.",
+    ],
+    safetyCommon: [
+      "Generally well-tolerated in published animal and Russian clinical research at studied doses",
+      "Mild local irritation at the injection site occasionally reported",
+    ],
+    safetyRare: [
+      "Long-term safety data outside the Khavinson group is limited",
+      "The direct DNA-binding mechanism (if it occurs as proposed) raises theoretical concerns about off-target gene regulation that have not been comprehensively investigated",
+      "Telomerase induction is itself a process implicated in some oncogenic pathways; whether the magnitude produced by Epitalon administration carries meaningful tumour-risk implications is uncharacterised",
+    ],
+    contraindications: [
+      "Not authorised for human use in the UK/EU/US",
+      "Pregnancy and lactation — no data",
+      "Active or historic malignancy — theoretical contraindication via the telomerase mechanism",
+    ],
+    studies: [
+      {
+        title: "Epitalon and telomerase activity in cultured human somatic cells",
+        summary:
+          "Khavinson-group publications reporting dose-dependent induction of telomerase activity in human fibroblast cultures, with corresponding extension of replicative capacity beyond the Hayflick limit.",
+        source: "Khavinson group, peer-reviewed",
+        year: 2003,
+      },
+      {
+        title: "Pineal peptide effects on melatonin rhythm in aged animals",
+        summary:
+          "Restoration of melatonin amplitude and circadian-rhythm regularity in aged rodent models receiving cyclical Epitalon administration versus age-matched controls.",
+        source: "Russian gerontology literature",
+        year: 2008,
+      },
+      {
+        title: "Gerontoprotective effect of Epitalon in long-term rodent studies",
+        summary:
+          "Extension of average and maximum lifespan in mouse and rat populations receiving lifelong Epitalon administration versus controls; effect attributed to combined circadian, antioxidant, and telomerase-related mechanisms.",
+        source: "Russian gerontology literature",
+        year: 2011,
+      },
+    ],
+    faqs: [
+      {
+        q: "Is Epitalon a nootropic in the cognitive-enhancement sense?",
+        a: "Not directly. Epitalon does not raise BDNF or act on the cognitive-peptide pathways in the way Semax or Noopept do. Its relevance to cognition is indirect — through circadian restoration, sleep-architecture support, and stress-resilience modulation. Researchers studying cognitive ageing in the context of disrupted sleep-wake regulation use it as one tool in that question; researchers studying acute cognitive enhancement use it less often.",
+      },
+      {
+        q: "How does Epitalon differ from Pinealon?",
+        a: "Both are short Khavinson-school bioregulators. Pinealon (Glu-Asp-Arg, tripeptide) is positioned as a neuroprotective peptide with antioxidant and excitotoxicity-attenuating effects. Epitalon (Ala-Glu-Asp-Gly, tetrapeptide) is positioned as a pineal-acting peptide with telomerase and circadian effects. They are complementary tools within the same theoretical framework rather than substitutes.",
+      },
+      {
+        q: "Is telomerase induction safe?",
+        a: "Telomerase is the enzyme that maintains chromosome-end length, allowing cell division to continue beyond the normal replicative limit. It is constitutively active in stem cells and germ cells; it is also activated abnormally in most cancers. Whether pharmacological induction by Epitalon administration carries meaningful tumour-risk implications has not been characterised in long-term human research. The theoretical concern is real but unquantified.",
+      },
+      {
+        q: "What is the evidence outside Russia?",
+        a: "Sparse. Most published Epitalon research originates from the Khavinson group or close collaborators. Independent Western replication of the most distinctive claims is limited. The cellular-level findings (telomerase induction in culture) are better-replicated than the whole-organism gerontoprotective findings.",
+      },
+      {
+        q: "Does it improve sleep?",
+        a: "Russian clinical research in elderly populations reports improvements in subjective sleep quality, particularly in subjects with age-related melatonin-rhythm blunting. The mechanism is plausible — pineal-targeted modulation should affect melatonin output — but the data is geographically constrained and the placebo-controlled evidence base outside Russia is limited.",
+      },
+    ],
+    related: ["pinealon", "dsip", "cerebrolysin"],
+    keywords: [
+      "Epitalon",
+      "Epithalon peptide UK",
+      "Epitalon telomerase research",
+      "Khavinson Epitalon",
+      "pineal peptide research",
+      "Epitalon vs Pinealon",
+    ],
+    tags: ["neuroprotective", "khavinson-bioregulator", "russian-origin", "sleep-architecture"],
+    lastReviewed: "2026-05-16",
+  },
+
+  {
+    slug: "cortexin",
+    name: "Cortexin",
+    aliases: ["Bovine brain peptide preparation"],
+    category: "Neuroprotection",
+    tagline:
+      "A standardised low-molecular-weight peptide preparation derived from bovine cerebral cortex, used in Russian clinical practice for cognitive impairment, post-stroke recovery, and traumatic brain injury research — the closest single sister to Cerebrolysin.",
+    halfLife: "Multi-component preparation with varied pharmacokinetics",
+    ukStatus:
+      "Not licensed as a medicine in the UK. Used clinically in the Russian Federation and several CIS countries.",
+    euStatus:
+      "Not approved by the EMA. No centralised EU authorisation; licensing status varies by member state.",
+    overview: [
+      "Cortexin is a complex peptide preparation produced by acetic-acid extraction and standardised processing of bovine cerebral cortex tissue. It contains a defined mixture of low-molecular-weight peptides (under 10 kDa) plus free amino acids, vitamins, and trace minerals. Mechanistically and historically it sits alongside Cerebrolysin as one of the two principal multi-component brain-derived peptide preparations used in Eastern European clinical practice.",
+      "The differences from Cerebrolysin are practical rather than fundamental. Cortexin is bovine-derived rather than porcine; it is administered intramuscularly rather than intravenously in most protocols; and its clinical positioning is broader, covering paediatric neurological indications (perinatal CNS injury, developmental delays) alongside the adult cognitive and stroke-recovery indications Cerebrolysin is best known for.",
+      "Like Cerebrolysin, its complexity is both a strength and a weakness in research terms. The multi-component preparation produces pleiotropic neurotrophic effects on multiple pathways simultaneously, which mirrors physiological neurotrophic signalling more closely than any single peptide; the same complexity makes the mechanism harder to dissect in clean experimental work.",
+    ],
+    history: [
+      "Developed in the Soviet Union in the late 1980s and registered as a medicinal product in Russia in 1999.",
+      "Standard prescription medication in Russia and several CIS countries for a range of cognitive, cerebrovascular, and developmental indications.",
+      "Subject to a substantial Russian-language clinical-trial body in stroke recovery, vascular dementia, traumatic brain injury, and paediatric neurology.",
+      "Has not progressed to Western regulatory approval; remains unlicensed by the MHRA, EMA, and FDA.",
+    ],
+    mechanism: [
+      "Multi-component neurotrophic factor mimicry — the preparation contains fragments that reproduce aspects of BDNF, NGF, GDNF, and CNTF signalling without being any one of those molecules.",
+      "Modulation of GABAergic and glutamatergic balance in cortical neurons, contributing to its reported anticonvulsant and neuroprotective properties.",
+      "Antioxidant effects via upregulation of endogenous antioxidant enzyme expression and direct radical scavenging.",
+      "Anti-apoptotic effects in models of ischaemic and traumatic neuronal injury.",
+      "Modulation of microglial activation and reduction of neuroinflammatory mediator release in CNS injury models.",
+    ],
+    benefits: [
+      "Cognitive improvement in cerebrovascular disease and post-stroke populations in Russian clinical trials.",
+      "Reported neuroprotective effects in traumatic-brain-injury research, including paediatric indications.",
+      "Anticonvulsant adjunct effects studied in epilepsy research.",
+      "Broad clinical use profile across paediatric and adult indications, providing extensive real-world experience.",
+      "Long track record of post-marketing safety data in Russian and CIS clinical practice.",
+    ],
+    dosing: [
+      {
+        route: "Intramuscular injection (clinical use in approving jurisdictions)",
+        dosage: "Typical clinical doses 5–10 mg per injection",
+        frequency: "Daily during a treatment cycle",
+        duration: "Cycles of 10 days, sometimes repeated after intervals",
+        notes:
+          "Not approved or prescribed in the UK; this information is for educational reference only.",
+      },
+    ],
+    routes: [
+      "Intramuscular injection — the standard clinical route.",
+      "Oral administration is not used; the bioactive peptides are degraded by gastrointestinal proteases.",
+      "Intranasal administration has been explored in research but is not the standard clinical route.",
+    ],
+    safetyCommon: [
+      "Generally well-tolerated in Russian clinical use",
+      "Mild injection-site reactions reported in some patients",
+      "Occasional hypersensitivity reactions — local rash or urticaria",
+    ],
+    safetyRare: [
+      "Anaphylactic reactions to the bovine-derived preparation, as with any animal-protein biologic",
+      "Theoretical considerations around prion or other transmissible-disease risk in animal-derived biologics, managed by purification and screening in approved manufacture",
+    ],
+    contraindications: [
+      "Not licensed in the UK",
+      "Known hypersensitivity to bovine-derived proteins",
+      "Pregnancy and lactation (per labelling in approving jurisdictions)",
+    ],
+    studies: [
+      {
+        title: "Cortexin in post-stroke cognitive recovery",
+        summary:
+          "Russian multicentre study reporting accelerated recovery of cognitive function in patients receiving adjunct Cortexin during the rehabilitation phase versus standard care alone.",
+        source: "Russian neurology literature",
+        year: 2010,
+      },
+      {
+        title: "Cortexin in paediatric perinatal CNS injury",
+        summary:
+          "Russian clinical research in neonates with hypoxic-ischaemic encephalopathy reporting improved neurodevelopmental outcomes at follow-up in the treated group.",
+        source: "Russian paediatric neurology literature",
+        year: 2013,
+      },
+      {
+        title: "Comparative study of Cortexin and Cerebrolysin in vascular dementia",
+        summary:
+          "Russian comparative trial reporting broadly similar cognitive outcomes between the two preparations on standardised cognitive batteries, with differences in tolerability profile.",
+        source: "Russian neurology literature",
+        year: 2015,
+      },
+    ],
+    faqs: [
+      {
+        q: "How does Cortexin differ from Cerebrolysin?",
+        a: "Both are multi-component brain-derived peptide preparations with overlapping mechanisms and clinical indications. The principal differences: Cortexin is bovine-cortex-derived (Cerebrolysin is porcine-brain-derived), administered intramuscularly (Cerebrolysin is typically intravenous), and has broader paediatric clinical positioning. The pharmacological profiles are more similar than different.",
+      },
+      {
+        q: "Is Cortexin available in the UK?",
+        a: "No. Cortexin is not licensed by the MHRA and is not legally supplied for human use in the United Kingdom. It is licensed in Russia and several CIS countries. Importation for personal use is restricted under the Human Medicines Regulations 2012.",
+      },
+      {
+        q: "Can Cortexin be used in cognitive enhancement research outside clinical indications?",
+        a: "It has been studied principally in clinical populations — stroke recovery, vascular dementia, paediatric CNS injury — rather than as a generic cognitive enhancer in healthy subjects. The translational relevance to non-clinical cognitive performance is less well-characterised than for Semax or Cerebrolysin.",
+      },
+      {
+        q: "Why intramuscular rather than intravenous?",
+        a: "The intramuscular route is more practical for outpatient administration in the protocols Cortexin is typically used in. The bioactive components are absorbed adequately from the muscle depot for the intended pharmacodynamic effect; the higher peak plasma concentrations of IV administration are not necessary for the clinical effects.",
+      },
+    ],
+    related: ["cerebrolysin", "semax", "pinealon"],
+    keywords: [
+      "Cortexin",
+      "Cortexin UK research",
+      "bovine cortex peptide preparation",
+      "Cortexin vs Cerebrolysin",
+      "Russian neuropeptide preparation",
+    ],
+    tags: ["neuroprotective", "russian-origin", "parenteral", "bdnf-inducer"],
+    lastReviewed: "2026-05-16",
+  },
+
+  {
+    slug: "p21",
+    name: "P21",
+    aliases: ["CNTF-derived peptide", "neuropoietin-related peptide"],
+    category: "Neurogenesis",
+    tagline:
+      "A small peptide derived from a neurotrophic-cytokine framework, characterised in academic research for hippocampal neurogenesis induction and anti-neuroinflammatory effects in models of cognitive ageing and Alzheimer-type pathology.",
+    halfLife:
+      "Pharmacodynamic effects on neurogenesis extend across weeks despite shorter plasma exposure",
+    ukStatus:
+      "Not a licensed medicine. Research chemical for laboratory and preclinical use only.",
+    euStatus:
+      "Not approved by the EMA. No clinical authorisation in any major EU jurisdiction.",
+    overview: [
+      "P21 is a small synthetic peptide engineered from a region of the neurotrophic-cytokine family — the same superfamily that includes ciliary neurotrophic factor (CNTF) and the leukaemia inhibitory factor — designed to retain the pro-neurogenic activity of the full protein while losing the broader cytokine effects that would otherwise dominate the systemic response.",
+      "The molecule has been characterised in academic research as one of the few peptide candidates capable of measurably inducing hippocampal neurogenesis in adult animals — generating new dentate gyrus neurons from quiescent neural stem cells. The endpoint matters because adult hippocampal neurogenesis is one of the few demonstrated routes by which the adult brain produces structurally new processing capacity, and its rate declines with age and with chronic stress.",
+      "P21 also shows anti-neuroinflammatory effects in cell-culture and animal models, attenuating microglial activation in response to amyloid-beta exposure and similar inflammatory triggers. The compound is studied in models of cognitive ageing and Alzheimer-type pathology where neurogenic decline and neuroinflammation are both implicated.",
+    ],
+    history: [
+      "Developed in academic research as part of a programme to derive smaller, more drug-like fragments from the cytokine-family neurotrophic factors that had themselves proven impractical as therapeutics due to molecular size and pleiotropic effects.",
+      "Subject to a peer-reviewed preclinical literature from the early 2010s onwards, with the strongest data coming from murine models of cognitive ageing and Alzheimer-type pathology.",
+      "Has not progressed to clinical-trial registration in any jurisdiction. No human safety or efficacy data is publicly available.",
+      "Remains a research peptide used as a tool for studying adult neurogenesis and neuroinflammation pharmacology.",
+    ],
+    mechanism: [
+      "Promotion of adult hippocampal neurogenesis — induction of neural stem cell proliferation in the dentate gyrus and survival of newly differentiated neurons.",
+      "Modulation of the JAK-STAT signalling cascade downstream of the cytokine-receptor framework the peptide derives from, without producing the broader systemic cytokine effects of the parent molecules.",
+      "Anti-neuroinflammatory effects via attenuation of microglial activation, reduction of pro-inflammatory cytokine release, and shift of microglia toward the M2 (resolution) phenotype.",
+      "Indirect cognitive effects through restoration of neurogenic capacity in aged or pathological brain states where baseline neurogenesis is depressed.",
+      "Reported reduction of amyloid-beta-induced neuronal injury in Alzheimer-model preparations, partly via the anti-inflammatory mechanism.",
+    ],
+    benefits: [
+      "Induction of measurable adult hippocampal neurogenesis in aged-mouse models in published research.",
+      "Improved performance on hippocampus-dependent learning tasks in cognitively impaired animal models.",
+      "Anti-neuroinflammatory effects in models of Alzheimer-type pathology.",
+      "Restoration of synaptic plasticity markers (LTP magnitude, spine density) in aged-brain preparations.",
+      "Distinct mechanism from the BDNF-inducer family — useful as a complementary research tool.",
+    ],
+    dosing: [
+      {
+        route: "Subcutaneous / intraperitoneal (research)",
+        dosage: "Microgram-range doses in animal protocols",
+        frequency: "Daily during a study course",
+        duration: "Variable; chronic protocols of several weeks have been examined in mouse research",
+        notes:
+          "No validated human protocol exists. No clinical trials are publicly registered.",
+      },
+    ],
+    routes: [
+      "Subcutaneous injection — primary route in animal research.",
+      "Intraperitoneal in some rodent studies.",
+      "Oral administration has not been validated in published research.",
+    ],
+    safetyCommon: [
+      "Limited safety data — preclinical animal research only, no human pharmacovigilance",
+      "Generally well-tolerated in the reported animal protocols at studied doses",
+    ],
+    safetyRare: [
+      "Theoretical concerns relating to chronic JAK-STAT modulation, which is implicated in some oncogenic pathways when persistently activated",
+      "Long-term toxicology data is not publicly available",
+      "Pleiotropic cytokine-family pharmacology — even with the smaller peptide, off-target signalling cannot be ruled out",
+    ],
+    contraindications: [
+      "Not authorised for human use in any jurisdiction",
+      "Theoretical contraindication in subjects with active or historic malignancy via the JAK-STAT mechanism",
+      "No data in pregnancy, lactation, or paediatric contexts",
+    ],
+    studies: [
+      {
+        title: "P21 induces adult hippocampal neurogenesis in aged mice",
+        summary:
+          "Chronic administration produced measurable increases in dentate gyrus BrdU-positive neuron counts in aged mice versus age-matched controls, with corresponding improvements on hippocampus-dependent learning tasks.",
+        source: "Peer-reviewed neuroscience literature",
+        year: 2014,
+      },
+      {
+        title: "P21 attenuates amyloid-beta induced neuroinflammation",
+        summary:
+          "Reduction of microglial activation markers and pro-inflammatory cytokine release in Alzheimer-model mouse brains receiving P21 administration during the pathology-progression window.",
+        source: "Peer-reviewed neuroscience literature",
+        year: 2017,
+      },
+      {
+        title: "Cognitive recovery in Alzheimer's mouse models with P21 treatment",
+        summary:
+          "Partial restoration of spatial and recognition memory performance in transgenic mouse models of Alzheimer-type pathology following chronic P21 administration.",
+        source: "Peer-reviewed neuroscience literature",
+        year: 2019,
+      },
+    ],
+    faqs: [
+      {
+        q: "Is P21 the same molecule as the p21 cell-cycle inhibitor protein?",
+        a: "No. The P21 research peptide discussed here is a distinct molecule with a distinct mechanism; the name collision with the cell-cycle inhibitor p21^Cip1/Waf1 (also called CDKN1A) is unfortunate but the two are unrelated. Literature searches require care to disambiguate the two.",
+      },
+      {
+        q: "How does P21 differ from BDNF-inducing peptides?",
+        a: "BDNF inducers (Semax, Noopept, Cerebrolysin) stabilise existing synapses and support neuronal survival through neurotrophin signalling. P21 acts further upstream, inducing the formation of entirely new neurons through neurogenic induction in the dentate gyrus. The two mechanisms can be combined in research designs — they address different parts of the cognitive-plasticity pipeline.",
+      },
+      {
+        q: "Is there human data?",
+        a: "Not publicly. All published P21 data is preclinical, primarily from murine models. No human trials are registered in major trial registries to date.",
+      },
+      {
+        q: "What about safety?",
+        a: "The mechanism involves modulation of cytokine-family signalling cascades that have broader effects in the body than just the cognitive endpoint. Long-term safety in humans is uncharacterised, and the theoretical concerns about chronic JAK-STAT modulation are real and unanswered. This is a research tool, not a candidate human therapeutic on the current evidence.",
+      },
+    ],
+    related: ["dihexa", "fgl-peptide", "cerebrolysin"],
+    keywords: [
+      "P21 peptide",
+      "P21 neurogenesis research",
+      "CNTF-derived peptide",
+      "neurogenic peptide research",
+      "Alzheimer's research peptide",
+    ],
+    tags: ["synaptogenic", "neuroprotective"],
+    lastReviewed: "2026-05-16",
+  },
+
+  {
+    slug: "ghk-cu",
+    name: "GHK-Cu (cognitive angle)",
+    aliases: ["Gly-His-Lys-Cu", "Copper tripeptide-1"],
+    category: "Neurogenesis",
+    tagline:
+      "A naturally occurring tripeptide-copper complex best known for skin and tissue-repair effects, but with a distinct cognitive-research literature covering gene-expression modulation, antioxidant defence, and indirect neurotrophic effects.",
+    molecularFormula: "C₁₄H₂₄N₆O₄Cu (as Cu complex)",
+    molecularWeight: "402.93 g/mol (Cu complex)",
+    halfLife: "Short plasma half-life; gene-expression effects persist beyond clearance",
+    sequence: "Gly-His-Lys (with bound Cu²⁺)",
+    ukStatus:
+      "Not licensed as a medicine in the UK. Research chemical only; some cosmetic-grade GHK-Cu is sold for topical use, distinct from research-grade material.",
+    euStatus:
+      "Not approved by the EMA as a medicine. Used in cosmetic formulations under separate regulatory framework.",
+    overview: [
+      "GHK-Cu is a naturally occurring tripeptide — glycine-histidine-lysine — that complexes copper ions in plasma and tissue. The molecule was first isolated in the 1970s as the factor in young human plasma that supported wound healing more effectively than the same plasma from older donors. Its predominant identity in the research-peptide market is as a skin and tissue-repair compound, but it has a distinct and less-publicised literature on cognitive and brain-tissue effects.",
+      "The cognitive case for GHK-Cu rests on three observations. First, the molecule has been characterised as a broad-spectrum modulator of gene expression — published gene-array work suggests it shifts expression of more than a thousand genes toward a youthful phenotype, including a substantial number in pathways relevant to neuronal survival, antioxidant defence, and neurotrophic signalling. Second, copper homeostasis is itself relevant to CNS function: dysregulated copper handling is implicated in several neurodegenerative conditions. Third, animal research has reported antioxidant and neuroprotective effects in brain-tissue preparations.",
+      "The cognitive evidence base is meaningfully smaller than the skin-and-tissue-repair evidence base. GHK-Cu is included on this site for completeness — it is studied in cognitive contexts in the published research-peptide literature — with the caveat that the strongest evidence for the molecule lies outside the cognitive endpoint.",
+    ],
+    history: [
+      "Isolated by Loren Pickart and colleagues in 1973 as the active factor in young human plasma that supported tissue repair.",
+      "Initial characterisation focused on wound healing and tissue regeneration; cognitive and brain-tissue effects were investigated more sporadically thereafter.",
+      "Widely adopted in cosmetic skin-care formulations from the 1990s onwards under regulatory frameworks distinct from the medicinal-product pathway.",
+      "Cognitive and gene-expression research has continued in academic and independent contexts, generating the broader 'pleiotropic regulator' framing the molecule is now described under.",
+    ],
+    mechanism: [
+      "Broad gene-expression modulation — published gene-array research reports shifts in expression of over 1,000 genes toward a youthful or pro-repair phenotype across multiple tissue types.",
+      "Copper-dependent enzymatic effects — GHK-Cu delivers copper to tissues in a bioavailable form, supporting the function of copper-dependent enzymes including superoxide dismutase (antioxidant defence) and lysyl oxidase (extracellular matrix remodelling).",
+      "Antioxidant effects via upregulation of endogenous antioxidant enzyme expression and direct radical-scavenging by the copper-peptide complex.",
+      "Reported neuroprotective effects in animal models, attributed to combined antioxidant, anti-inflammatory, and possibly mild trophic mechanisms.",
+      "Modulation of inflammatory gene expression, with reduction of pro-inflammatory markers in tissue-injury models.",
+    ],
+    benefits: [
+      "Antioxidant and tissue-protective effects in brain-tissue preparations under oxidative challenge.",
+      "Broad pro-repair gene-expression signature relevant to ageing-related cognitive decline contexts.",
+      "Reported neuroprotective effects in animal models of CNS injury.",
+      "Copper-delivery role supporting endogenous antioxidant enzyme function.",
+      "Naturally occurring molecule with extensive non-cognitive safety record from cosmetic use, providing a partial safety floor.",
+    ],
+    dosing: [
+      {
+        route: "Subcutaneous / intranasal (research)",
+        dosage: "Microgram to milligram range in animal protocols",
+        frequency: "Daily during a course",
+        duration: "Variable across published protocols",
+        notes:
+          "Topical GHK-Cu (cosmetic preparations) is a separate product category; the cognitive-research material is distinct.",
+      },
+    ],
+    routes: [
+      "Subcutaneous injection — primary route in animal research.",
+      "Intranasal administration documented in some research protocols.",
+      "Topical application is the dominant route for skin-care applications, not the cognitive research literature.",
+      "Oral administration faces the standard peptide-degradation barrier.",
+    ],
+    safetyCommon: [
+      "Generally well-tolerated in animal research and in the substantial cosmetic-use safety record",
+      "Mild local reactions at injection or topical-application site occasionally reported",
+    ],
+    safetyRare: [
+      "Copper toxicity is theoretically possible with excessive systemic administration; the standard research doses are far below relevant toxicity thresholds",
+      "The cognitive-research safety literature specifically is sparser than the general safety record",
+      "Long-term effects of chronic systemic GHK-Cu administration in cognitive contexts are uncharacterised",
+    ],
+    contraindications: [
+      "Not authorised for human medicinal use in the UK",
+      "Pregnancy and lactation — limited data",
+      "Wilson's disease and other copper-metabolism disorders — relative contraindication via the copper component",
+    ],
+    studies: [
+      {
+        title: "GHK-Cu gene-expression effects in human fibroblast cultures",
+        summary:
+          "Microarray analysis demonstrating modulation of expression of over 1,000 genes following GHK-Cu exposure, with the modulation pattern aligning with a shift toward a younger transcriptional phenotype across antioxidant, repair, and growth-factor pathways.",
+        source: "Pickart group, peer-reviewed",
+        year: 2012,
+      },
+      {
+        title: "Neuroprotective effects of GHK-Cu in cerebral ischaemia models",
+        summary:
+          "Animal-model work reporting reduced infarct volume and improved neurological scoring in rodents receiving GHK-Cu prior to or shortly after experimental cerebral ischaemia, attributed to combined antioxidant and anti-inflammatory mechanisms.",
+        source: "Peer-reviewed neuroscience literature",
+        year: 2015,
+      },
+      {
+        title: "Antioxidant enzyme modulation by GHK-Cu in brain tissue",
+        summary:
+          "Upregulation of superoxide dismutase and catalase expression in brain tissue following GHK-Cu administration, supporting the antioxidant-defence pathway as one of the molecule's principal neuroprotective routes.",
+        source: "Peer-reviewed biochemistry literature",
+        year: 2017,
+      },
+    ],
+    faqs: [
+      {
+        q: "Is GHK-Cu really a cognitive peptide?",
+        a: "The strongest GHK-Cu evidence base is in skin and tissue repair, where its commercial profile is largest. There is, however, a real and separate research literature on cognitive and brain-tissue effects — antioxidant defence, neuroprotection in ischaemia models, and the broad gene-expression signature that touches several cognition-relevant pathways. It is a peripheral entry in the nootropic-peptide field rather than a central one, but a legitimate one.",
+      },
+      {
+        q: "How does cosmetic-grade GHK-Cu differ from research-grade?",
+        a: "Cosmetic-grade material is formulated for topical delivery, typically at low concentrations and in vehicle systems optimised for skin penetration rather than systemic bioavailability. Research-grade material is supplied as a lyophilised peptide for reconstitution and parenteral administration in laboratory work. The chemistry is the same; the formulation and the regulatory framework are different.",
+      },
+      {
+        q: "What about the copper safety question?",
+        a: "Copper is an essential trace element with a well-characterised therapeutic window. The doses of copper delivered by GHK-Cu in standard research protocols are far below those associated with copper toxicity. The exception is subjects with copper-metabolism disorders such as Wilson's disease, where any additional copper exposure is contraindicated.",
+      },
+      {
+        q: "Can GHK-Cu be combined with other cognitive peptides?",
+        a: "Combinations are studied in research. The mechanisms are sufficiently different from the BDNF-inducer family that there is little redundancy; whether the combination produces additive cognitive effects in the way the Russian cognitive-peptide stacks do has not been characterised systematically. Treat as an experimental combination rather than an established stack.",
+      },
+    ],
+    related: ["pinealon", "epitalon", "cerebrolysin"],
+    keywords: [
+      "GHK-Cu",
+      "GHK Cu cognitive research",
+      "copper peptide brain",
+      "GHK-Cu neuroprotection",
+      "GHK-Cu gene expression",
+    ],
+    tags: ["neuroprotective"],
+    lastReviewed: "2026-05-16",
+  },
+
+  {
+    slug: "cycloprolylglycine",
+    name: "Cycloprolylglycine",
+    aliases: ["CPG", "cyclo(L-prolyl-L-glycine)", "Noopept active metabolite"],
+    category: "Cognitive Enhancement",
+    tagline:
+      "An endogenous cyclic dipeptide that is also the primary active metabolite of Noopept, with intrinsic anxiolytic and cognitive effects independent of its parent compound — a research peptide in its own right.",
+    molecularFormula: "C₇H₁₀N₂O₂",
+    molecularWeight: "154.17 g/mol",
+    halfLife: "Short plasma half-life; behavioural effects persist beyond exposure",
+    sequence: "cyclo(L-Pro-L-Gly)",
+    ukStatus:
+      "Not a licensed medicine in the UK. Research chemical only.",
+    euStatus:
+      "Not approved by the EMA. Not on any major regulatory schedule.",
+    overview: [
+      "Cycloprolylglycine, abbreviated CPG, is a small cyclic dipeptide that occurs endogenously in the mammalian brain and plasma. It also happens to be the principal active metabolite formed from Noopept after oral administration — the parent peptidomimetic is rapidly hydrolysed in vivo to release CPG, and a substantial portion of Noopept's pharmacological activity is attributable to this metabolite acting in its own right.",
+      "Because CPG is endogenous, it occupies a different regulatory and pharmacological position from purely synthetic research peptides. The molecule has been characterised separately from Noopept in published Russian research, where direct administration of CPG produces measurable anxiolytic, antiamnestic, and neuroprotective effects on standard behavioural endpoints — effects that broadly mirror those of Noopept but with a different pharmacokinetic profile.",
+      "The molecule is included on this site because it is studied as a research peptide in its own right and because it provides a cleaner mechanistic probe for the cognitive effects of the Noopept pharmacology — administering CPG directly avoids the metabolic transformation step and produces a more defined pharmacokinetic picture.",
+    ],
+    history: [
+      "Identified as an endogenous brain dipeptide in early biochemistry work characterising the mammalian neuropeptide landscape.",
+      "Identified as the principal active metabolite of Noopept by the same V. V. Zakusov Institute of Pharmacology group that developed Noopept itself, in pharmacokinetic studies in the early 2000s.",
+      "Studied as an independent research peptide from the mid-2000s onwards in Russian neuropharmacology, with publications covering anxiolytic, antiamnestic, and neuroprotective endpoints.",
+      "Remains a research chemical in all jurisdictions including the United Kingdom; not separately licensed despite the endogenous status.",
+    ],
+    mechanism: [
+      "Modulation of AMPA and NMDA glutamate receptor function in hippocampal neurons, mirroring the principal Noopept mechanism without the parent-compound metabolism step.",
+      "Induction of BDNF and NGF expression in the hippocampus after sustained administration, paralleling the parent-compound effects with a different pharmacokinetic time-course.",
+      "Direct anxiolytic effects in animal stress models, attributed to modulation of stress-response signalling and possibly enkephalin-system interaction.",
+      "Antioxidant effects through upregulation of endogenous antioxidant defences, contributing to neuroprotection in oxidative-stress models.",
+      "Anti-apoptotic effects in neuronal preparations exposed to ischaemic and excitotoxic stress.",
+    ],
+    benefits: [
+      "Anxiolytic effects in animal stress paradigms with similar profile to Noopept but cleaner pharmacokinetics.",
+      "Antiamnestic effects in scopolamine-induced amnesia models — preservation of learning under cholinergic blockade.",
+      "Neuroprotective effects in ischaemic and oxidative-stress models.",
+      "Memory consolidation support in animal learning paradigms.",
+      "Useful as a mechanistic probe for the Noopept pharmacology without the parent-compound metabolism variable.",
+      "Endogenous molecule — partial safety floor from the fact that the brain produces and tolerates it constitutively.",
+    ],
+    dosing: [
+      {
+        route: "Intranasal / oral / parenteral (research)",
+        dosage: "Microgram to milligram range in animal protocols",
+        frequency: "Variable across published research",
+        duration: "Short courses in most studies",
+        notes:
+          "Direct administration produces a different pharmacokinetic profile from Noopept-derived CPG.",
+      },
+    ],
+    routes: [
+      "Intranasal administration in some research protocols, exploiting the same nose-to-brain pathway as Semax.",
+      "Oral administration is feasible because the molecule is small and cyclic, conferring partial protection against gut proteases.",
+      "Parenteral routes used in animal research.",
+    ],
+    safetyCommon: [
+      "Generally well-tolerated in animal research at studied doses",
+      "The endogenous status of the molecule provides a partial safety floor; the body produces and metabolises it constitutively",
+    ],
+    safetyRare: [
+      "Long-term safety data outside Russian research is sparse",
+      "Pharmacological doses substantially above endogenous concentrations have not been characterised for long-term effects",
+    ],
+    contraindications: [
+      "Not authorised for human use",
+      "Pregnancy and lactation — no controlled data",
+    ],
+    studies: [
+      {
+        title: "Cycloprolylglycine as the active metabolite of Noopept",
+        summary:
+          "Pharmacokinetic dissection demonstrating that Noopept is rapidly hydrolysed to CPG in vivo, and that direct CPG administration reproduces a substantial portion of the parent compound's behavioural effects.",
+        source: "V. V. Zakusov Institute, peer-reviewed",
+        year: 2006,
+      },
+      {
+        title: "Anxiolytic effects of CPG in animal stress paradigms",
+        summary:
+          "Russian neuropharmacology research demonstrating anxiolytic effects in elevated plus-maze and open-field paradigms following direct CPG administration, comparable in magnitude to Noopept administered at metabolically equivalent doses.",
+        source: "Russian neuropharmacology literature",
+        year: 2010,
+      },
+      {
+        title: "CPG neuroprotection in oxidative-stress models",
+        summary:
+          "Upregulation of endogenous antioxidant enzyme activity and reduction of lipid-peroxidation markers in brain-tissue preparations exposed to oxidative challenge in the presence of CPG.",
+        source: "Peer-reviewed pharmacology literature",
+        year: 2013,
+      },
+    ],
+    faqs: [
+      {
+        q: "How is CPG different from Noopept?",
+        a: "Noopept is the orally administered parent compound; CPG is its principal active metabolite. The two share most of the cognitive and anxiolytic pharmacology, but the pharmacokinetics differ — Noopept administration produces a metabolite-dominated effect profile, while direct CPG administration produces a cleaner pharmacokinetic picture without the parent-compound transformation step.",
+      },
+      {
+        q: "Why use CPG instead of Noopept?",
+        a: "For research designs requiring a cleaner mechanistic probe of the CPG-mediated pharmacology, direct administration is preferable to working through the parent compound. For research designs requiring an orally bioavailable cognitive enhancer with a longer published track record, Noopept is the standard choice.",
+      },
+      {
+        q: "Is CPG safer because it's endogenous?",
+        a: "Endogenous status confers a partial safety floor — the body produces and tolerates the molecule constitutively. It does not, however, mean that pharmacological administration at supraphysiological concentrations is safe by default. Long-term safety at research doses has not been comprehensively characterised.",
+      },
+      {
+        q: "Can CPG and Noopept be combined?",
+        a: "Mechanistically the combination is largely redundant — Noopept already produces CPG-mediated effects via its metabolism. Direct CPG addition to a Noopept protocol would primarily change the pharmacokinetic time-course rather than the underlying pharmacology.",
+      },
+    ],
+    related: ["noopept", "semax", "selank"],
+    keywords: [
+      "Cycloprolylglycine",
+      "CPG peptide",
+      "Noopept metabolite",
+      "endogenous cognitive dipeptide",
+      "cyclo Pro Gly research",
+    ],
+    tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "oral-active"],
+    lastReviewed: "2026-05-16",
+  },
 ];
 
 export function getPeptideBySlug(slug: string): Peptide | undefined {

@@ -14,14 +14,19 @@ const PEPTIDE_TO_RESEARCH: Record<string, string[]> = {
   "n-acetyl-semax": ["bdnf-and-cognitive-peptides", "intranasal-peptide-delivery"],
   "n-acetyl-selank": ["peptides-and-anxiety-research", "intranasal-peptide-delivery"],
   "fgl-peptide": ["neurogenesis-research-overview"],
+  epitalon: ["sleep-cognition-dsip-review", "neurogenesis-research-overview"],
+  cortexin: ["bdnf-and-cognitive-peptides", "neurogenesis-research-overview"],
+  p21: ["neurogenesis-research-overview", "bdnf-and-cognitive-peptides"],
+  "ghk-cu": ["neurogenesis-research-overview"],
+  cycloprolylglycine: ["bdnf-and-cognitive-peptides"],
 };
 
 const RESEARCH_TO_PEPTIDES: Record<string, string[]> = {
   "intranasal-peptide-delivery": ["semax", "selank", "dsip"],
-  "bdnf-and-cognitive-peptides": ["semax", "noopept", "cerebrolysin"],
-  "neurogenesis-research-overview": ["dihexa", "fgl-peptide", "cerebrolysin"],
+  "bdnf-and-cognitive-peptides": ["semax", "noopept", "cerebrolysin", "cycloprolylglycine"],
+  "neurogenesis-research-overview": ["dihexa", "fgl-peptide", "p21", "ghk-cu"],
   "peptides-and-anxiety-research": ["selank", "n-acetyl-selank"],
-  "sleep-cognition-dsip-review": ["dsip"],
+  "sleep-cognition-dsip-review": ["dsip", "epitalon"],
 };
 
 export function getResearchForPeptide(slug: string): string[] {

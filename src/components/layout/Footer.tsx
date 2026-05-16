@@ -11,8 +11,9 @@ const COLS = [
       { href: "/peptides/selank", label: "Selank" },
       { href: "/peptides/dihexa", label: "Dihexa" },
       { href: "/peptides/cerebrolysin", label: "Cerebrolysin" },
-      { href: "/peptides/dsip", label: "DSIP" },
       { href: "/peptides/noopept", label: "Noopept" },
+      { href: "/peptides/epitalon", label: "Epitalon" },
+      { href: "/peptides", label: "All 15 peptides →" },
     ],
   },
   {
@@ -31,6 +32,7 @@ const COLS = [
       { href: "/guides/research-peptides-beginners-guide", label: "Beginner's guide" },
       { href: "/guides/uk-peptide-regulations", label: "UK regulations" },
       { href: "/glossary", label: "Glossary" },
+      { href: "/research/studies", label: "Study deep dives" },
       { href: "/alternatives", label: "Alternatives" },
       { href: "/resources", label: "Resources" },
     ],
