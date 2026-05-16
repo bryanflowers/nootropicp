@@ -16,12 +16,22 @@ const COLS = [
     ],
   },
   {
-    title: "Guides",
+    title: "Use cases",
+    links: [
+      { href: "/use-cases/peptides-for-memory-research", label: "Memory research" },
+      { href: "/use-cases/peptides-for-focus-research", label: "Focus & attention" },
+      { href: "/use-cases/peptides-for-anxiety-research", label: "Anxiety research" },
+      { href: "/use-cases/peptides-for-sleep-research", label: "Sleep research" },
+      { href: "/use-cases/peptides-for-neuroprotection-research", label: "Neuroprotection" },
+    ],
+  },
+  {
+    title: "Reference",
     links: [
       { href: "/guides/research-peptides-beginners-guide", label: "Beginner's guide" },
       { href: "/guides/uk-peptide-regulations", label: "UK regulations" },
-      { href: "/guides/peptide-storage-reconstitution", label: "Storage & reconstitution" },
       { href: "/glossary", label: "Glossary" },
+      { href: "/alternatives", label: "Alternatives" },
       { href: "/resources", label: "Resources" },
     ],
   },
