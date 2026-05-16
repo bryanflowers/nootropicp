@@ -16,11 +16,12 @@ const COLS = [
     ],
   },
   {
-    title: "Research",
+    title: "Guides",
     links: [
-      { href: "/compare", label: "Comparisons" },
-      { href: "/stacks", label: "Stacks" },
-      { href: "/research", label: "Research summaries" },
+      { href: "/guides/research-peptides-beginners-guide", label: "Beginner's guide" },
+      { href: "/guides/uk-peptide-regulations", label: "UK regulations" },
+      { href: "/guides/peptide-storage-reconstitution", label: "Storage & reconstitution" },
+      { href: "/glossary", label: "Glossary" },
       { href: "/resources", label: "Resources" },
     ],
   },

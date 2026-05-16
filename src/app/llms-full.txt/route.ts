@@ -1,5 +1,6 @@
 import { peptides } from "@/data/peptides";
 import { researchSummaries } from "@/data/research";
+import { glossary } from "@/data/glossary";
 import { SITE, DISCLAIMER } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -77,11 +78,37 @@ export function GET() {
     out.push("");
   }
 
+  out.push("## Glossary terms");
+  out.push("");
+  for (const g of glossary) {
+    out.push(`### ${g.term}`);
+    out.push(`URL: ${SITE.url}/glossary#${g.id}`);
+    out.push(g.short);
+    out.push("");
+    out.push(g.body);
+    out.push("");
+    out.push("---");
+    out.push("");
+  }
+
   out.push("## Comparison pages");
   out.push("");
   out.push(`- Semax vs Selank: ${SITE.url}/compare/semax-vs-selank`);
   out.push(`- Dihexa vs Cerebrolysin: ${SITE.url}/compare/dihexa-vs-cerebrolysin`);
   out.push(`- Noopept vs Semax: ${SITE.url}/compare/noopept-vs-semax`);
+  out.push(`- Peptides vs Racetams: ${SITE.url}/compare/peptides-vs-racetams`);
+  out.push("");
+  out.push("## Mechanism hubs");
+  out.push("");
+  out.push(`- BDNF-inducing peptides: ${SITE.url}/mechanisms/bdnf-inducing-peptides`);
+  out.push(`- Synaptogenic peptides: ${SITE.url}/mechanisms/synaptogenic-peptides`);
+  out.push(`- Enkephalinase-inhibiting peptides: ${SITE.url}/mechanisms/enkephalinase-inhibiting-peptides`);
+  out.push("");
+  out.push("## Guides");
+  out.push("");
+  out.push(`- Beginner's guide to research peptides: ${SITE.url}/guides/research-peptides-beginners-guide`);
+  out.push(`- UK peptide regulations: ${SITE.url}/guides/uk-peptide-regulations`);
+  out.push(`- Storage and reconstitution: ${SITE.url}/guides/peptide-storage-reconstitution`);
   out.push("");
   out.push("## Stack guides");
   out.push("");

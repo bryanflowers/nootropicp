@@ -7,8 +7,10 @@ const NAV = [
   { href: "/peptides", label: "Peptides" },
   { href: "/compare", label: "Compare" },
   { href: "/stacks", label: "Stacks" },
+  { href: "/mechanisms/bdnf-inducing-peptides", label: "Mechanisms" },
+  { href: "/guides/research-peptides-beginners-guide", label: "Guides" },
   { href: "/research", label: "Research" },
-  { href: "/resources", label: "Resources" },
+  { href: "/glossary", label: "Glossary" },
   { href: "/about", label: "About" },
 ];
 
