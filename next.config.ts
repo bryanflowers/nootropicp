@@ -12,6 +12,12 @@ const config: NextConfig = {
       { source: "/peptide/:slug", destination: "/peptides/:slug", permanent: true },
     ];
   },
+  async rewrites() {
+    return [
+      { source: "/api/peptides.json", destination: "/api/peptides" },
+      { source: "/api/peptides/:slug.json", destination: "/api/peptides/:slug" },
+    ];
+  },
   async headers() {
     return [
       {
