@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { ThemeToggle } from "./ThemeToggle";
+import { SearchDialog } from "@/components/search/SearchDialog";
 import { Brain } from "lucide-react";
 
 const NAV = [
@@ -36,6 +37,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <SearchDialog />
           <ThemeToggle />
         </div>
       </Container>

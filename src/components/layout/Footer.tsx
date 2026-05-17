@@ -29,6 +29,7 @@ const COLS = [
   {
     title: "Reference",
     links: [
+      { href: "/search", label: "Search" },
       { href: "/guides/research-peptides-beginners-guide", label: "Beginner's guide" },
       { href: "/guides/uk-peptide-regulations", label: "UK regulations" },
       { href: "/glossary", label: "Glossary" },

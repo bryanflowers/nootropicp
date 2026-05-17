@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { peptides } from "@/data/peptides";
 import { researchSummaries } from "@/data/research";
 import { studies } from "@/data/studies";
+import { CATEGORIES, ALL_TAGS, categoryToSlug } from "@/lib/cluster";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -41,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/alternatives/dihexa",
     "/alternatives/cerebrolysin",
     "/research/studies",
+    "/search",
     "/legal/disclaimer",
     "/legal/privacy",
     "/legal/terms",
@@ -72,5 +74,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...peptideRoutes, ...researchRoutes, ...studyRoutes];
+  const categoryRoutes = CATEGORIES.map((c) => ({
+    url: `${base}/peptides/category/${categoryToSlug(c)}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const tagRoutes = ALL_TAGS.map((t) => ({
+    url: `${base}/peptides/tag/${t}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  return [...staticRoutes, ...peptideRoutes, ...researchRoutes, ...studyRoutes, ...categoryRoutes, ...tagRoutes];
 }

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { DisclaimerBanner } from "@/components/layout/DisclaimerBanner";
+import { ExitIntentNewsletter } from "@/components/layout/ExitIntentNewsletter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/lib/site";
 
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
+          <ExitIntentNewsletter />
         </ThemeProvider>
       </body>
     </html>

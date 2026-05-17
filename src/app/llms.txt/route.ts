@@ -63,12 +63,14 @@ export function GET() {
   }
   lines.push("");
   lines.push("## Reference");
-  lines.push(`- [Peptide library](${SITE.url}/peptides) — 10 catalogued peptides`);
+  lines.push(`- [Peptide library](${SITE.url}/peptides) — ${peptides.length} catalogued peptides`);
+  lines.push(`- [Search](${SITE.url}/search) — full-text site search`);
   lines.push(`- [Glossary](${SITE.url}/glossary) — 30+ defined terms (BDNF, NGF, c-Met, FGFR1, LTP, enkephalinase, HPA axis, intranasal delivery, etc.)`);
   lines.push(`- [Resources](${SITE.url}/resources) — external references for primary literature and regulatory checks`);
   lines.push(`- [About](${SITE.url}/about) — editorial process, conflict-of-interest disclosure`);
   lines.push(`- [Disclaimer](${SITE.url}/legal/disclaimer) — full legal position`);
   lines.push(`- [Machine-readable peptide data (JSON)](${SITE.url}/api/peptides.json)`);
+  lines.push(`- [Search index (JSON)](${SITE.url}/api/search-index)`);
   lines.push(`- [Full text manifest](${SITE.url}/llms-full.txt)`);
   lines.push("");
 

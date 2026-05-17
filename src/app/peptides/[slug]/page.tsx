@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -5,8 +6,12 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PeptidePageContent } from "@/components/peptide/PeptidePageContent";
 import { RelatedResearch } from "@/components/peptide/RelatedResearch";
+import { MobileTableOfContents } from "@/components/peptide/MobileTableOfContents";
+import { MoleculeCard } from "@/components/peptide/MoleculeCard";
+import { ShareButtons } from "@/components/peptide/ShareButtons";
 import { NewsletterSignup } from "@/components/layout/NewsletterSignup";
 import { peptides, getPeptideBySlug, getAllSlugs } from "@/data/peptides";
+import { TAG_LABELS, categoryToSlug } from "@/lib/cluster";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 import { estimateReadingTime } from "@/lib/utils";
@@ -114,23 +119,51 @@ export default async function PeptidePage({ params }: Params) {
           { label: peptide.name },
         ]}
       />
-      <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
-        <span>{readingMinutes} min read</span>
-        {peptide.lastReviewed && (
-          <>
-            <span aria-hidden>·</span>
-            <span>
-              Last reviewed{" "}
-              {new Date(peptide.lastReviewed).toLocaleDateString("en-GB", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-          </>
-        )}
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
+          <span>{readingMinutes} min read</span>
+          {peptide.lastReviewed && (
+            <>
+              <span aria-hidden>·</span>
+              <span>
+                Last reviewed{" "}
+                {new Date(peptide.lastReviewed).toLocaleDateString("en-GB", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            </>
+          )}
+        </div>
+        <ShareButtons title={`${peptide.name} — ${SITE.name}`} />
+      </div>
+      <div className="mb-8">
+        <MoleculeCard peptide={peptide} />
       </div>
       <PeptidePageContent peptide={peptide} />
+      {peptide.tags && peptide.tags.length > 0 && (
+        <Section eyebrow="Browse by mechanism" title="Mechanism tags" className="mt-4">
+          <div className="flex flex-wrap gap-2">
+            <Link
+              href={`/peptides/category/${categoryToSlug(peptide.category)}`}
+              className="rounded-full border border-brand-300 bg-brand-50 px-3 py-1 text-xs font-medium text-brand-800 hover:bg-brand-100 dark:border-brand-700 dark:bg-brand-950/30 dark:text-brand-200"
+            >
+              {peptide.category} →
+            </Link>
+            {peptide.tags.map((t) => (
+              <Link
+                key={t}
+                href={`/peptides/tag/${t}`}
+                className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-brand-400 hover:text-brand-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"
+              >
+                {TAG_LABELS[t].name}
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
+      <MobileTableOfContents />
       <Section eyebrow="Further reading" title="Related research summaries" className="mt-4">
         <RelatedResearch peptideSlug={peptide.slug} />
       </Section>
