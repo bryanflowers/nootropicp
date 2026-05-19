@@ -68,4 +68,6 @@ export interface Peptide {
   keywords: string[];
   tags?: PeptideTag[];
   lastReviewed?: string; // ISO date e.g. "2026-05-16"
+  pubchemCid?: number; // PubChem Compound ID — only set when a single, verified CID matches the molecule
+  pubchemNote?: string; // Optional caption (e.g. "Shown: GHK base; Cu complex coordinates the imidazole nitrogen")
 }

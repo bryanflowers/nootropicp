@@ -35,11 +35,27 @@ export default function PrivacyPage() {
             </li>
           </ul>
 
+          <h2>Outbound supplier-link logging</h2>
+          <p>
+            When you click one of the supplier links on a peptide page (the "Sourcing for laboratory
+            research" cards linking to PeptideBarn.co.uk or PeptideAuthority.co.uk), your click
+            passes through an internal redirect on this site before reaching the supplier. The
+            redirect records a row in our analytics database with: which supplier was clicked,
+            which peptide page the click came from, the browser family (Chrome, Firefox, etc),
+            and a one-way hash of your IP address combined with a daily-rotating salt. The raw IP
+            is not stored; the hash is not linkable across days. We use these counts to understand
+            which peptide pages drive research-sourcing interest. The redirect then forwards you
+            to the supplier with UTM parameters identifying our site as the referrer. If you would
+            rather not be counted, do not click the supplier links — the supplier domains can be
+            reached directly from your browser without going through us.
+          </p>
+
           <h2>What we don't collect</h2>
           <ul>
             <li>No third-party advertising trackers or pixels.</li>
             <li>No cross-site tracking cookies.</li>
             <li>No personally identifying analytics beyond aggregate page-view counts.</li>
+            <li>No raw IP addresses; the supplier-click logger stores only a salted hash.</li>
           </ul>
 
           <h2>Your rights (UK GDPR)</h2>

@@ -181,7 +181,7 @@ export function PeptidePageContent({ peptide }: { peptide: Peptide }) {
         </Section>
 
         <Section id="sourcing" title="Sourcing for Laboratory Research" eyebrow="Section 11">
-          <SupplierCTA peptideName={peptide.name} />
+          <SupplierCTA peptideName={peptide.name} peptideSlug={peptide.slug} />
         </Section>
 
         <Section id="related" title="Related Peptides" eyebrow="Continue reading">

@@ -4,6 +4,11 @@ const config: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   turbopack: { root: __dirname },
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "pubchem.ncbi.nlm.nih.gov", pathname: "/rest/pug/compound/**" },
+    ],
+  },
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },

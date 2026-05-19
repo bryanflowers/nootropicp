@@ -131,6 +131,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "intranasal"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 9811102,
   },
 
   {
@@ -258,6 +259,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["enkephalinase-inhibitor", "russian-origin", "intranasal", "bdnf-inducer"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 11765600,
   },
 
   {
@@ -722,6 +724,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["sleep-architecture", "neuroprotective"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 68816,
   },
 
   {
@@ -841,6 +844,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "oral-active"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 180496,
   },
 
   {
@@ -1283,6 +1287,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["neuroprotective", "khavinson-bioregulator", "russian-origin", "sleep-architecture"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 219042,
   },
 
   {
@@ -1645,6 +1650,8 @@ export const peptides: Peptide[] = [
     ],
     tags: ["neuroprotective"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 73587,
+    pubchemNote: "Structure shown is the GHK tripeptide (Gly-His-Lys) base. In GHK-Cu, a copper ion is chelated by the imidazole nitrogen of histidine and adjacent backbone donors.",
   },
 
   {
@@ -1766,6 +1773,7 @@ export const peptides: Peptide[] = [
     ],
     tags: ["bdnf-inducer", "ngf-inducer", "russian-origin", "oral-active"],
     lastReviewed: "2026-05-16",
+    pubchemCid: 126154,
   },
 ];
 

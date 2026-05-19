@@ -86,6 +86,16 @@ export default function AboutPage() {
             decision on this site (which peptides to cover, what to say about them, which studies to
             summarise) is influenced by any commercial relationship.
           </p>
+          <p>
+            We do measure how often the supplier links are clicked. Clicks pass through an internal
+            redirect that records the supplier, the source peptide page, the browser family, and a
+            daily-salted hash of the visitor's IP address (the raw IP is not stored). This lets us
+            see which peptide pages drive research-sourcing interest without tracking individual
+            visitors across the site. Outbound supplier links carry <code>rel=&quot;sponsored
+            nofollow&quot;</code> in line with Google's guidance on sponsored or commercially
+            relevant links, even though our supplier links are not currently paid placements. Full
+            detail in the <a href="/legal/privacy">privacy policy</a>.
+          </p>
 
           <h2>Reporting errors</h2>
           <p>

@@ -1,8 +1,13 @@
 import { ExternalLink, FlaskConical } from "lucide-react";
 import { Card, CardBody } from "@/components/ui/Card";
-import { SITE } from "@/lib/site";
 
-export function SupplierCTA({ peptideName }: { peptideName: string }) {
+interface SupplierCTAProps {
+  peptideName: string;
+  peptideSlug: string;
+}
+
+export function SupplierCTA({ peptideName, peptideSlug }: SupplierCTAProps) {
+  const refQuery = `?ref=${encodeURIComponent(peptideSlug)}`;
   return (
     <Card className="border-brand-200 bg-brand-50/50 dark:border-brand-800/50 dark:bg-brand-950/20">
       <CardBody>
@@ -22,17 +27,17 @@ export function SupplierCTA({ peptideName }: { peptideName: string }) {
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a
-                href={SITE.partners.peptideBarn}
+                href={`/api/go/peptidebarn${refQuery}`}
                 target="_blank"
-                rel="noopener"
+                rel="sponsored nofollow noopener"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
               >
                 PeptideBarn.co.uk <ExternalLink className="h-4 w-4" aria-hidden />
               </a>
               <a
-                href={SITE.partners.peptideAuthority}
+                href={`/api/go/peptideauthority${refQuery}`}
                 target="_blank"
-                rel="noopener"
+                rel="sponsored nofollow noopener"
                 className="inline-flex items-center gap-1.5 rounded-lg border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 hover:bg-brand-100 dark:border-brand-700 dark:text-brand-300 dark:hover:bg-brand-900/30"
               >
                 PeptideAuthority.co.uk <ExternalLink className="h-4 w-4" aria-hidden />

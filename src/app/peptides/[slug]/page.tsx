@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PeptidePageContent } from "@/components/peptide/PeptidePageContent";
 import { RelatedResearch } from "@/components/peptide/RelatedResearch";
 import { MobileTableOfContents } from "@/components/peptide/MobileTableOfContents";
-import { MoleculeCard } from "@/components/peptide/MoleculeCard";
+import { ChemicalStructure } from "@/components/peptide/ChemicalStructure";
 import { ShareButtons } from "@/components/peptide/ShareButtons";
 import { NewsletterSignup } from "@/components/layout/NewsletterSignup";
 import { peptides, getPeptideBySlug, getAllSlugs } from "@/data/peptides";
@@ -139,7 +139,7 @@ export default async function PeptidePage({ params }: Params) {
         <ShareButtons title={`${peptide.name} — ${SITE.name}`} />
       </div>
       <div className="mb-8">
-        <MoleculeCard peptide={peptide} />
+        <ChemicalStructure peptide={peptide} />
       </div>
       <PeptidePageContent peptide={peptide} />
       {peptide.tags && peptide.tags.length > 0 && (
