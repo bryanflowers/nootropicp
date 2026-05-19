@@ -19,8 +19,13 @@ export function buildMetadata({
   keywords,
 }: BuildMetadataArgs): Metadata {
   const url = new URL(path, SITE.url).toString();
-  const ogImage = image ?? "/og-default.svg";
   const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+  // Only emit explicit images when the caller has overridden the default.
+  // Otherwise we leave them undefined so that Next.js's opengraph-image.tsx /
+  // twitter-image.tsx file convention can populate them per-route.
+  const explicitImages = image
+    ? [{ url: image, width: 1200, height: 630, alt: title }]
+    : undefined;
   return {
     metadataBase: new URL(SITE.url),
     title: fullTitle,
@@ -33,14 +38,14 @@ export function buildMetadata({
       title: fullTitle,
       description,
       siteName: SITE.name,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      ...(explicitImages ? { images: explicitImages } : {}),
       locale: "en_GB",
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: [ogImage],
+      ...(image ? { images: [image] } : {}),
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
   };
