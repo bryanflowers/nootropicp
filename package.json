@@ -10,7 +10,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "indexnow:push": "node scripts/push-indexnow.mjs",
+    "bing:report": "node scripts/bing-crawl-report.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.53.1",

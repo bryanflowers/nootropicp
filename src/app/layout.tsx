@@ -28,6 +28,11 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: SITE.name, description: SITE.description },
   robots: { index: true, follow: true },
+  verification: {
+    other: {
+      "msvalidate.01": "C5AE62034DC7F3A5B29064A63E4A27F6",
+    },
+  },
 };
 
 export const viewport: Viewport = {
