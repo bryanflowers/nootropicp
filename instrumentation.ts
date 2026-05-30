@@ -1,7 +1,6 @@
 // Server-side Sentry bootstrap. Re-imports the existing config files; does
 // NOT pull any auto-instrumentation packages (Prisma/MongoDB/etc.) that
 // previously broke builds. Added by migration/rollout_instrumentation.js.
-import type { Instrumentation } from "next";
 
 export async function register() {
   if (process.env.NEXT_RUNTIME === "nodejs") {
@@ -12,7 +11,16 @@ export async function register() {
   }
 }
 
-export const onRequestError: Instrumentation.onRequestError = async (err, request, context) => {
+export const onRequestError = async (
+  err: unknown,
+  request: unknown,
+  context: unknown,
+) => {
   const Sentry = await import("@sentry/nextjs");
-  Sentry.captureRequestError(err, request, context);
+  // Sentry.captureRequestError exists on @sentry/nextjs >= 8.43 (paired
+  // with Next 15's onRequestError hook). Guard for older versions so we
+  // don't throw at runtime on Next 14 sites.
+  if (typeof (Sentry as any).captureRequestError === "function") {
+    (Sentry as any).captureRequestError(err, request, context);
+  }
 };
