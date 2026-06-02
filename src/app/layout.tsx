@@ -78,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <ExitIntentNewsletter />
         </ThemeProvider>
+              <script src="https://panel.bazookaemail.com/rum/v1.js" defer></script>
       </body>
     </html>
   );
