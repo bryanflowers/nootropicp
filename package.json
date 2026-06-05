@@ -15,7 +15,7 @@
     "bing:report": "node scripts/bing-crawl-report.mjs"
   },
   "dependencies": {
-    "@sentry/nextjs": "^10.53.1",
+    "@sentry/nextjs": "^10.56.0",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.46.1",
     "@types/node": "^22.10.1",
