@@ -8,6 +8,7 @@ import { DisclaimerBanner } from "@/components/layout/DisclaimerBanner";
 import { ExitIntentNewsletter } from "@/components/layout/ExitIntentNewsletter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/lib/site";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
@@ -70,6 +71,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={inter.variable} suppressHydrationWarning>
       <body className="min-h-screen bg-white font-sans text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-SHFZPMVH1H" strategy="afterInteractive" />
+      <Script id="ga4-init" strategy="afterInteractive">
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SHFZPMVH1H');`}
+      </Script>
+
         <JsonLd data={[organizationSchema, websiteSchema]} />
         <ThemeProvider>
           <DisclaimerBanner />

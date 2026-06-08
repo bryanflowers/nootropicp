@@ -42,7 +42,6 @@ const config: NextConfig = {
 export default withSentryConfig(config, {
   silent: !process.env.CI,
   telemetry: false,
-  url: process.env.SENTRY_URL,
   authToken: process.env.SENTRY_AUTH_TOKEN,
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
